@@ -1,0 +1,4 @@
+﻿
+> app-building-prediction-software@1.0.0 lint
+> next lint
+

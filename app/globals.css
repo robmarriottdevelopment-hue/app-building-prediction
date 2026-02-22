@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core colors based on the image */
+    --background: 220 15% 14%;
+    /* Dark Grey (#1e2024 approx) */
+    --foreground: 0 0% 100%;
+    /* White (#ffffff) */
+
+    --card: 220 15% 18%;
+    /* Slightly lighter grey */
+    --card-foreground: 0 0% 100%;
+
+    --popover: 220 15% 18%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 184 62% 24%;
+    /* Deep Teal (#176366 approx) */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 184 30% 15%;
+    /* Darker Teal for secondary */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 220 10% 25%;
+    --muted-foreground: 220 10% 65%;
+
+    --accent: 184 60% 35%;
+    /* Brighter Teal for hover */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 10% 25%;
+    --input: 220 10% 25%;
+    --ring: 184 62% 40%;
+    /* Glow color */
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
