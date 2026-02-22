@@ -40,7 +40,7 @@ export function RevenueChart({ data }: RevenueChartProps) {
                             tickFormatter={(value) => `$${value}`}
                         />
                         <Tooltip
-                            formatter={(value: number) => [`$${Math.round(value).toLocaleString()}`, '']}
+                            formatter={(value: any) => [`$${Math.round(Number(value)).toLocaleString()}`, '']}
                             labelFormatter={(label) => `Month ${label}`}
                         />
                         <Legend />

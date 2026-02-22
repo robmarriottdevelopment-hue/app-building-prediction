@@ -14,7 +14,8 @@ export async function POST(request: Request) {
         }
 
         // 2. Get Data
-        const benchmark = await getMarketBenchmark(inputs.category);
+        const category = inputs.category === 'Not sure' ? 'Other' : inputs.category;
+        const benchmark = await getMarketBenchmark(category);
 
         // 3. Score
         const scores = calculateScores(inputs);
